@@ -1,0 +1,260 @@
+@font-face {
+    font-family: "apna font name";
+    src: url("bacdoanload font" );
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    --x-coord: 0px;
+    --y-coord: 0px;
+    --scale: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.page1 {
+    width: 100%;
+    height: 70vh;
+    padding: 0 5rem;
+    padding-top: 7rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#nav{
+    width: 100%;
+    height: 70px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -8%;
+
+      
+    animation: spin linear both;
+    animation-timeline: scroll();
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: .5;
+ 
+}
+
+.doubt{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 20%;
+}
+
+#nav #nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#nav #nav-right button{
+    padding: 10px 10px;
+    background-color: greenyellow;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes spin {
+    to {
+        opacity: 0;
+        color: #000000;
+    }
+}
+
+.page1 h1 {
+    font-size: 6.8rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: .8;
+
+    animation: spin linear both;
+    animation-timeline: scroll();
+}
+
+.page1 h1 .line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+
+.page1 h1:nth-last-child(1) {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.page1 h1:nth-child(4) {
+    margin-left: 49%;
+}
+
+#scroll-down{
+    font-size: 10px;
+    margin-left: 85%;
+    margin-top: 8%;
+    
+    animation: spin linear both;
+    animation-timeline: scroll();
+}
+
+.page2 {
+    width: 100%;
+    margin-top: 70vh;
+    z-index: 2;
+    position: relative;
+}
+
+.page2 .mouse-follower {
+    height: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: var(--y-coord);
+    left: var(--x-coord);
+    transform: translate(-50%, -50%) scale(var(--scale));
+    transition: transform 0.1s linear;
+}
+
+.page2 video {
+    width: 100%;
+}
+
+.page3 {
+    padding: 0 5rem;
+    height: 100vh;
+    width: 100%;
+    padding-top: 20vh;
+    position: relative;
+    z-index: 2;
+}
+
+.page3 h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    /* display: flex; */
+    align-items: center; 
+    gap: rem;
+    line-height: 1;
+    width: 60vw;
+}
+
+.page3 h2 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    margin-top: 35%;
+}
+
+.page3 h2  #line  {
+    width: 90%;
+    height: 2px;
+    background-color: #fff;
+}
+
+
+#page4{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+#page4 h1{
+    font-size: 300px;
+    line-height: .5;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    /* justify-content: center; */
+    padding: 20px;
+    font-weight: 600;
+    letter-spacing: .5;
+}
+
+#page4 h2{
+    font-size: 320px;
+    line-height: .5;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    /* justify-content: center; */
+    padding: 20px;
+    font-weight: 600;
+    letter-spacing: .5;
+}
+
+#page4 .button{
+    padding: 10px;
+    background-color: #000;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: 80%;
+    width: 15%;
+    color: #fff;
+}
+
+
+
+
+
+
+ #page5{
+    width: 100%;
+    height: 100vh;
+   /* background-color: #dadada;  */
+} 
+
+
+.swiper {
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    /* padding: 20px;  */
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
